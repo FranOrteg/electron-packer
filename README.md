@@ -62,4 +62,4 @@ npm install --save-dev @electron/packager
 It is **not** recommended to install `@electron/packager` globally.
 
 
-<img src="https://github.com/darsaveli/Mariam/blob/main/1479814528_webarebears.gif" width="385px" align="center">
+<img align="center" src="https://tenor.com/es/view/coding-typing-big-brained-busy-sweating-gif-17808553" width="385px">
