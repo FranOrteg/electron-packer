@@ -1,0 +1,105 @@
+:root {
+  --labit-background-gray: #f0f4f8;
+  --labit-card-gray: #35425b;
+  --fullcalendar-header-monthlycalendar: #d7e1ea;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url(./fonts/Karla-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+body {
+  font-family: Karla;
+  color: var(--labit-card-gray);
+  font-size: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+  width: 350px;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+}
+
+div.itemRow {
+  display: flex;
+  align-items: center;
+}
+
+div.itemRow:not(:last-child) {
+  margin: 8px 0;
+}
+
+div.bar {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background-color: var(--fullcalendar-header-monthlycalendar);
+  border-radius: 5px;
+}
+
+div.percBar {
+  position: absolute;
+  /*width: 50%;*/
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  background-color: var(--labit-card-gray);
+}
+
+span.fileName {
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+div.icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+div.icon {
+  height: 100%;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+div.icon img {
+  width: 14px;
+  height: 14px;
+}
+
+div.completed {
+  cursor: pointer;
+}
+
+/* Animations */
+
+.fadedButton {
+  opacity: 1;
+  transition: opacity 0.5s linear 0s;
+  cursor: pointer;
+}
+
+.fadedButton:hover {
+  opacity: 0.5;
+}

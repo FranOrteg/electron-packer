@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <link rel="stylesheet" href="./downloadProgress.css" />
+  </head>
+  <body style="border-radius: 5px">
+    <div id="container" class="container"></div>
+
+    <!-- DOWNLOADING -->
+    <template id="itemRowNotFinished">
+      <div class="itemRow">
+        <div class="info">
+          <span class="fileName">#FILENAME#</span>
+          <div class="bar">
+            <div id="percBar" class="percBar"></div>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="icon fadedButton">
+            <img src="./img/x.svg" />
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- DOWNLOADED -->
+    <template id="finishedInfo">
+      <div class="finishedInfo">
+        <span>15 kB PNG</span>
+      </div>
+    </template>
+
+    <!-- DOWNLOADING -->
+    <template id="finishedOptions">
+      <div class="icons">
+        <div class="icon folder fadedButton">
+          <img src="./img/folder.svg" />
+        </div>
+        <div class="icon x fadedButton">
+          <img src="./img/x.svg" />
+        </div>
+      </div>
+    </template>
+  </body>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+  <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
+  <script src="./downloadProgress.js"></script>
+
+  <script>if (window.module) module = window.module;</script>
+</html>

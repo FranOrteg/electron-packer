@@ -1,0 +1,22 @@
+{
+  "name": "skylab",
+  "version": "0.1.1",
+  "description": "Skylab by Francisco Ortega",
+  "main": "main.js",
+  "bundleVersion": "1",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . SkyLab --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --appCopyright=\"Labit\" --version-string.FileDescription=CE --version-string.ProductName=\"SkyLab\"",
+    "package-linux": "electron-packager . SkyLab --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/icon.svg --prune=true --out=release-builds"
+  },
+  "author": "Francisco Ortega",
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "electron-context-menu": "^3.6.1",
+    "electron-store": "^8.1.0"
+  }
+}
